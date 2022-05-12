@@ -3,3 +3,4 @@ exp1 : kaggle. base false. Dropout, dense. epoch 150
 exp2 : kaggle. base true. Dropout, dense. epoch 300
 exp3 : kaggle. base true. Dense. epoch 300
 exp4 : kaggle. base false. Dense. epoch 300
+exp5 : mendley. base false. Dense. epoch 300
