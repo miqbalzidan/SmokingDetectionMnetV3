@@ -1,7 +1,23 @@
 
-exp1 : kaggle. base false. Dropout, dense. epoch 150
+exp1 : kaggle. base false. Dropout, dense. epoch 150 
 exp2 : kaggle. base true. Dropout, dense. epoch 300
 exp3 : kaggle. base true. Dense. epoch 300
 exp4 : kaggle. base false. Dense. epoch 300
 exp5 : mendley. base false. Dense. epoch 300
 exp6 : mendley. base true. Dense. epoch 300
+exp7 : mendley. base false. Dropout(0.5), dense. epoch 300
+
+
+
+
+
+
+best :
+1. exp7
+2. exp5
+
+
+
+self notes*
+smoker_detecting = exp1 & 2
+smoker_detecting unfreeze all = exp3
