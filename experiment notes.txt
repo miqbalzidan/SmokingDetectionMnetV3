@@ -8,7 +8,7 @@ exp6 : mendley. base true. Dense. epoch 300
 exp7 : mendley. base false. Dropout(0.5), dense. epoch 300
 exp8 : mendley. base false. drouput_rate(0,5). Dense. epoch 300
 exp9 : mendley. base false. Dropout(0,7) ,dense. epoch 300
-
+exp10 : mendley. base falsse. Dropout(0,2), dense. epoch300
 
 
 
