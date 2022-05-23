@@ -8,26 +8,28 @@ exp6 : mendley. base true. Dense. epoch 300
 exp7 : mendley. base false. Dropout(0.5), dense. epoch 300
 exp8 : mendley. base false. drouput_rate(0,5). Dense. epoch 300
 exp9 : mendley. base false. Dropout(0,7) ,dense. epoch 300
-exp10 : mendley. base falsse. Dropout(0,2), dense. epoch300
+exp10 : mendley. base false. Dropout(0,2), dense. epoch300
 exp11 : mendley. base false[-7]. Dense. epoch300
 exp12 : mendley. base false[-7], Dropout(0,5), Dense. epoch300
 exp13 : custom mendley. base false. Dropout(0,5), Dense. epoch300
 exp14 : mendley. base false. Dropout(0,6), Dense. epoch300
+exp15 : mendley 80. base false. Dropout(0,5), Dense. epoch300
 
 
 
 
 best :
-1. exp7
-2. exp9 (Dropout effect, val loss lower than train)
-3. exp5 (overfit)
-4. exp10
+1. exp15
+2. exp7
+3. exp9 (Dropout effect, val loss lower than train)
+4. exp5 (overfit)
+5. exp10
 
 
 
 self notes*
 smoker_detecting = exp1 & 2
 smoker_detecting unfreeze all = exp3
-exp8 = exp5
+exp8 <= exp5
 custom mendley = 1810/400/200
-1928/241/241
+Mendley 80 = 1928/241/241
