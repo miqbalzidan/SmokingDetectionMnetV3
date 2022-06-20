@@ -15,7 +15,6 @@ exp13 : custom mendley. base false. Dropout(0,5), Dense. epoch300
 exp14 : mendley. base false. Dropout(0,6), Dense. epoch300
 exp15 : mendley 80. base false. Dropout(0,5), Dense. epoch300
 exp16 : kaggle (80/10/10). base false. Dropout(0,5), Dense. epoch300
-exp17 : mendley 80. base false. Dropout(0,5), Dense (softmax). epoch300
 
 
 
@@ -27,7 +26,7 @@ best :
 4. exp5 (overfit)
 5. exp10
 
-Default config:
+
 
 
 self notes*
@@ -36,6 +35,7 @@ smoker_detecting unfreeze all = exp3
 exp8 <= exp5
 custom mendley = 1810/400/200 
 Mendley 80 = 1930/240/240
+*(suspend) exp17 : mendley 80. base false. Dropout(0,5), Dense (softmax). epoch300
 
 
 1610 400 400
